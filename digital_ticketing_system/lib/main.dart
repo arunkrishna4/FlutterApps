@@ -1,4 +1,4 @@
-import 'package:digital_ticketing_system/login_page.dart';
+import 'package:digital_ticketing_system/Traveller/Tra_login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login_Page(),
+      home: traveller_login_page(),
     );
   }
 }

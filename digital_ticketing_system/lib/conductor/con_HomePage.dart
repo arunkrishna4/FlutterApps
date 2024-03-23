@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class Conductor_Page extends StatelessWidget {
-  const Conductor_Page({super.key});
+class Conductor_HomePage extends StatelessWidget {
+  const Conductor_HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
