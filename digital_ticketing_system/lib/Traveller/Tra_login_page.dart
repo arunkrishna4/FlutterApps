@@ -1,3 +1,4 @@
+import 'package:digital_ticketing_system/Traveller/userhome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
@@ -31,7 +32,7 @@ class _login_pageState extends State<traveller_login_page> {
               children: [
                 const SizedBox(height: 20.0),
                 Image.asset(
-                  'assets/loginphoto.png',
+                  'assests/traveller_loginphoto.png',
                   fit: BoxFit.contain,
                   height: MediaQuery.of(context).size.width < 768 ? 150 : 200,
                 ),
@@ -106,7 +107,12 @@ class _login_pageState extends State<traveller_login_page> {
                 ),
                 const SizedBox(height: 30.0),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: ((context) => const userhome_page())));
+                  },
                   child: const Text(
                     "Submit",
                     style: TextStyle(fontSize: 20.0),

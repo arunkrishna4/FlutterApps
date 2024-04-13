@@ -1,5 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_element
 
+import 'package:digital_ticketing_system/conductor/Conductor_HomePage.dart';
+import 'package:digital_ticketing_system/conductor/con_SignupPage.dart';
 import 'package:flutter/material.dart';
 // import 'package:helloworld/conductor/conductor_page.dart';
 // import 'package:helloworld/conductor/signup_page.dart';
@@ -135,8 +137,8 @@ class _Login_PageState extends State<con_Login_Page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          // builder: (context) => const Conductor_Page(),
-                          ),
+                        builder: (context) => const Conductor_HomePage(),
+                      ),
                     );
                     ;
                   },
@@ -173,8 +175,8 @@ class _Login_PageState extends State<con_Login_Page> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      // builder: (context) => const Signup_page(),
-                      ),
+                    builder: (context) => const con_Signup_page(),
+                  ),
                 );
               },
               style: ButtonStyle(

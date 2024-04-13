@@ -1,8 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-// import 'package:digital_ticketing_system/home_page.dart';
+import 'package:digital_ticketing_system/conductor/Conductor_HomePage.dart';
 import 'package:flutter/material.dart';
-// import 'package:helloworld/conductor/conductor_page.dart';
 
 class con_Signup_page extends StatefulWidget {
   const con_Signup_page({super.key});
@@ -175,8 +174,8 @@ class _Signup_pageState extends State<con_Signup_page> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            // builder: (context) => const Conductor_Page(),
-                            ),
+                          builder: (context) => const Conductor_HomePage(),
+                        ),
                       );
                     },
                     style: ButtonStyle(
